@@ -239,7 +239,8 @@ main {
     display: block;
     height: 300px;
     width: 400px;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    margin-right: 1.5rem; }
     .item img:hover {
       opacity: 0.5;
       border-color: #fbcfc8;
