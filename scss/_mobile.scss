@@ -65,6 +65,8 @@
     grid-template-areas:
     'bioimage'
     'bio'
+    'empty'
+    'workex'
     'job1'
     'job2'
     'job3';
@@ -72,7 +74,21 @@
     grid-template-columns: 1fr;
   }
   .projects {
+    img {
+      width: calc(100% - 0.01rem);
+      height: auto;
+    }
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    font-size: 18px !important;
+    display: block;
+    width: auto !important;
+    display: block;
   }
 }
 
@@ -123,6 +139,8 @@
       grid-template-areas:
               'bioimage'
               'bio'
+              'empty'
+              'workex'
               'job1'
               'job2'
               'job3';
@@ -136,7 +154,7 @@
   .projects {
     img {
       width: calc(100% - 0.01rem);
-      height: 180px;
+      height: 120px;
     }
 
     grid-template-columns: (auto-fit 1fr);
@@ -144,6 +162,14 @@
 
   .btn {
     width: calc(100% - 0.01rem);
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    font-size: 12px !important;
+    width: auto !important;
+    display: block;
   }
 }
 
@@ -191,13 +217,18 @@
     grid-template-areas:
             'bioimage'
             'bio'
+            'empty'
+            'workex'
             'job1'
             'job2'
             'job3';
 
-    grid-template-columns: (auto-fit 1fr);
+    grid-template-columns: 1fr;
   }
   .projects {
     grid-template-columns: (auto-fit 1fr);
+  }
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
